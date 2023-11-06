@@ -1,0 +1,61 @@
+/* Roboto Mono*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto+Mono&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --cor-1: #17BEBB;
+    --cor-2: #2E282A;
+    --cor-3: #FFFFFF;
+}
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto mono";
+}
+
+html {
+    width: 100%; height: 100%;
+}
+
+body {
+    width: 100%; height: 100%;
+    background-color: #2E282A;
+
+}
+
+main {
+    width: 100%; height: 70%;
+    display: flex;
+}
+
+#container1 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 40pt;
+    color: #17BEBB;
+}
+
+p {
+    margin: 1rem;
+    font-size: 16pt;
+    color: #FFFFFF;
+}
+
+#container2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    background-color: #FFFFFF;
+}
