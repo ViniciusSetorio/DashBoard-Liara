@@ -5,6 +5,7 @@
     --cor-1: #17BEBB;
     --cor-2: #2E282A;
     --cor-3: #FFFFFF;
+    --cor-4: #6c6cff;
 }
 
 * {
@@ -19,13 +20,15 @@ html {
 
 body {
     width: 100%; height: 100%;
-    background-color: #2E282A;
+    /*background-color: #2E282A;*/
+    background-image: linear-gradient(130deg, var(--cor-4) 15%, #42429b 43%, rgba(0, 0, 0, 0.842) 75%);
 
 }
 
 main {
-    width: 100%; height: 70%;
+    width: 100%; height: 90%;
     display: flex;
+    justify-content: center;
 }
 
 #container1 {
@@ -39,8 +42,8 @@ main {
 
 h1 {
     margin: 1rem;
-    font-size: 40pt;
-    color: #17BEBB;
+    font-size: 55pt;
+    color: var(--cor-3);
 }
 
 p {
@@ -54,8 +57,73 @@ p {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 form {
-    background-color: #FFFFFF;
+    max-width: 512px;
+    width: 80%;
+    height: 60%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-3);
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    box-shadow: rgba(255, 255, 255, 0.527) -1px -1px 15px 0px ;
+}
+
+form #email, #senha{
+    
+    height: 3rem;
+    width: 425px;
+    border-radius: 0.4rem;
+    border: 2px solid var(--cor-1);
+    padding-left: 1rem;
+}
+
+form #entrar{
+    width: 425px;
+    height: 2.5rem;
+    margin-top: 1rem;
+    background-color: var(--cor-1); /* depois*/ 
+    border: none;
+    color: var(--cor-3);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form #entrar:hover{
+    background-color: #19d3d0;
+}
+
+form a{
+    text-decoration: none;
+    color: var(--cor-1);
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
+form a:visited{
+    color: var(--cor-1);
+}
+
+form #criar{
+    width: 12rem;
+    height: 3rem;
+    background-color: var(--cor-4);
+    border: none;
+    color: var(--cor-3);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form #criar:hover {
+    background-color: #5656fa;
 }
