@@ -62,7 +62,7 @@ p {
     justify-content: center;
 }
 
-form {
+#form {
     max-width: 512px;
     width: 80%;
     height: 90%;
@@ -74,10 +74,10 @@ form {
     padding: 1rem;
     justify-content: space-evenly;
     border-radius: 1rem;
-    box-shadow: rgba(255, 255, 255, 0.527) -1px -1px 15px 0px ;
+    box-shadow: rgba(0, 0, 0, 0.527) -1px -1px 15px 0px ;
 }
 
-form #email, #senha, #nome{
+#form #email, #senha, #nome{
     height: 3rem;
     width: 90%;
     border-radius: 0.4rem;
@@ -90,7 +90,7 @@ form #email, #senha, #nome{
     display: none;
 }
 
-form #entrar, #cadastrar{
+#form #entrar, #cadastrar{
     width: 90%;
     height: 2.5rem;
     margin-top: 1rem;
@@ -102,28 +102,36 @@ form #entrar, #cadastrar{
     transition: 0.2s;
 }
 
+#entrar {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #cadastrar {
     display: none;
 }
 
-form #entrar:hover{
+#form #entrar:hover{
+    text-decoration: none;
     background-color: var(--cor-1_1);
 }
 
-form a{
+#form a{
     text-decoration: none;
     color: var(--cor-1);
 }
 
-form a:hover{
+#form a:hover{
     text-decoration: underline;
 }
 
-form a:visited{
+#form a:visited{
     color: var(--cor-1);
 }
 
-form #criar, #logar{
+#form #criar, #logar{
     width: 40%;
     height: 3rem;
     background-color: var(--cor-4);
@@ -138,6 +146,6 @@ form #criar, #logar{
     display: none;
 }
 
-form #criar:hover {
+#form #criar:hover {
     background-color: var(--cor-4_1);
 }
