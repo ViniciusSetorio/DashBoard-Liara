@@ -3,9 +3,11 @@
 
 :root {
     --cor-1: #17BEBB;
+    --cor-1_1: #19d3d0;
     --cor-2: #2E282A;
     --cor-3: #FFFFFF;
     --cor-4: #6c6cff;
+    --cor-4_1: #5656fa;
 }
 
 * {
@@ -63,7 +65,7 @@ p {
 form {
     max-width: 512px;
     width: 80%;
-    height: 60%;
+    height: 90%;
     gap: 1rem;
     display: flex;
     flex-direction: column;
@@ -75,17 +77,21 @@ form {
     box-shadow: rgba(255, 255, 255, 0.527) -1px -1px 15px 0px ;
 }
 
-form #email, #senha{
-    
+form #email, #senha, #nome{
     height: 3rem;
-    width: 425px;
+    width: 90%;
     border-radius: 0.4rem;
     border: 2px solid var(--cor-1);
     padding-left: 1rem;
+    caret-color: var(--cor-2);
 }
 
-form #entrar{
-    width: 425px;
+#nome {
+    display: none;
+}
+
+form #entrar, #cadastrar{
+    width: 90%;
     height: 2.5rem;
     margin-top: 1rem;
     background-color: var(--cor-1); /* depois*/ 
@@ -96,8 +102,12 @@ form #entrar{
     transition: 0.2s;
 }
 
+#cadastrar {
+    display: none;
+}
+
 form #entrar:hover{
-    background-color: #19d3d0;
+    background-color: var(--cor-1_1);
 }
 
 form a{
@@ -113,8 +123,8 @@ form a:visited{
     color: var(--cor-1);
 }
 
-form #criar{
-    width: 12rem;
+form #criar, #logar{
+    width: 40%;
     height: 3rem;
     background-color: var(--cor-4);
     border: none;
@@ -124,6 +134,10 @@ form #criar{
     transition: 0.2s;
 }
 
+#logar {
+    display: none;
+}
+
 form #criar:hover {
-    background-color: #5656fa;
+    background-color: var(--cor-4_1);
 }
