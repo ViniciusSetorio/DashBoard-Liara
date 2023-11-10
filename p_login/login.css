@@ -9,6 +9,7 @@
     --cor-4: #6c6cff;
     --cor-4_1: #5656fa;
     --cor-5: #FA350B;
+    --cor-7: #cf2f0c;
     --cor-6: #0D293F;
 }
 
@@ -117,7 +118,7 @@ p {
 
 #form #entrar:hover{
     text-decoration: none;
-    background-color: var(--cor-1_1);
+    background-color: var(--cor-7);
 }
 
 #form a{
@@ -130,7 +131,7 @@ p {
 }
 
 #form a:visited{
-    color: var(--cor-1);
+    color: var(--cor-4_1);
 }
 
 #form #criar, #logar{
